@@ -1,0 +1,54 @@
+CREATE TABLE customer
+  (customer_num      NUMBER(3)   CONSTRAINT customer_num_pk PRIMARY KEY,
+   fname             VARCHAR2(15),
+   lname             VARCHAR2(15),
+   company           VARCHAR2(20),
+   address1          VARCHAR2(20),
+   address2          VARCHAR2(20),
+   city              VARCHAR2(15),
+   state             CHAR(2),
+   zipcode           CHAR(5),
+   phone             VARCHAR(18)
+  );
+
+CREATE TABLE manufact
+  (manu_code      CHAR(3) CONSTRAINT manu_code_pk PRIMARY KEY,
+   manu_name      VARCHAR2(15));
+
+CREATE TABLE orders
+  (order_num      NUMBER(4)    CONSTRAINT order_num_pk PRIMARY KEY,
+   order_date     DATE         NOT NULL,
+   customer_num   NUMBER(3),
+   ship_instruct  VARCHAR2(40),
+   backlog        CHAR(1),
+   po_num         VARCHAR(10),
+   ship_date      DATE,
+   ship_weight    NUMBER(8,2),
+   ship_charge    NUMBER(6,2),
+   paid_date      DATE,
+   CONSTRAINT order_cust_num_fk Foreign key (Customer_num) 
+       REFERENCES CUSTOMER(customer_num));  
+
+CREATE TABLE stock
+  (stock_num      NUMBER(2),
+   manu_code      CHAR(3),
+   description    VARCHAR2(15),
+   unit_price     NUMBER(8,2),
+   unit           CHAR(4),
+   unit_descr     VARCHAR2(15),
+   CONSTRAINT Stock_PK Primary key (stock_num,manu_code),
+   CONSTRAINT Stock_Manufact_FK Foreign key (manu_code)
+      REFERENCES manufact (manu_code));
+
+CREATE TABLE items
+  (item_num       NUMBER(2),
+   order_num      NUMBER(4),
+   stock_num      NUMBER(2),
+   manu_code      CHAR(3),
+   quantity       NUMBER(3),
+   total_price    NUMBER(8,2),
+   CONSTRAINT ITEMS_PK Primary Key (item_num,order_num),
+   CONSTRAINT ITEMS_STOCK_FK Foreign Key (stock_num, manu_code)
+      REFERENCES stock (stock_num, manu_code));
+
+COMMIT;
