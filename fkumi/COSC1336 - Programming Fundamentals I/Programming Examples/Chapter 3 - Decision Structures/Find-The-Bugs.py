@@ -1,9 +1,9 @@
 RATE1 = .02
 RATE2 = .05
 
-def main():        
+def main():
    #get input item
-   sales = input('Enter the sales amount: ') 
+   sales = input('Enter the sales amount: ')
 
    #calculate commission
    if sales <= 15000.0
@@ -13,8 +13,7 @@ def main():
    #end if
 
    #display commission
-   print('Your commission is $', \
-         format(commission , '.2f'), sep = '')
+   print('Your commission is $', format(commission , '.2f'), sep = '')
 
 def userInfo():
     print('Name:     Instructor')

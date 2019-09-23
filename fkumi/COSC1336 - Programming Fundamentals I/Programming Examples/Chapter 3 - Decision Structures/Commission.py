@@ -13,8 +13,7 @@ def main():
    #end if
 
    #display commission
-   print('Your commission is $', \
-         format(commission , '.2f'), sep = '')
+   print('Your commission is $', format(commission , '.2f'), sep = '')
 
 def userInfo():
     print('Name:     Instructor')
