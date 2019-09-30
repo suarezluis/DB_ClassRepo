@@ -23,14 +23,14 @@ def main():
        print(grade, end=' ') 
        print('is \'F\'')
 
-def userInfo():
+def developerInfo():
     print('Name:     Instructor')
     print('Course:   Programming Fundamentals I')
     print('Program:  Decision Structures')
     print()
-    # End of userInfo
+    # End of developerInfo
 
-userInfo()
+developerInfo()
 main()
 
 # End of Test Program

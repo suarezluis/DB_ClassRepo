@@ -1,0 +1,10 @@
+SQL> select Table_Name, Column_Name, Comments from dict_columns where Column_Name = "BLOCK" and Table_Name Like 'USER_%';
+select Table_Name, Column_Name, Comments from dict_columns where Column_Name = "BLOCK" and Table_Name Like 'USER_%'
+                                                                               *
+ERROR at line 1:
+ORA-00904: "BLOCK": invalid identifier
+
+
+SQL> select Table_Name, Column_Name, Comments from dict_columns where Column_Name = 'BLOCK' and Table_Name Like 'USER_%';
+
+no rows selected

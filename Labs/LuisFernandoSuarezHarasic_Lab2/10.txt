@@ -1,0 +1,7 @@
+SELECT order#, 
+       item#, 
+       isbn, 
+       quantity, 
+       paideach, 
+       quantity * paideach AS "Item Total" 
+FROM   orderitems; 

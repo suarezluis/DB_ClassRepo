@@ -1,0 +1,16 @@
+SQL> select Table_Name  from user_tables;
+
+TABLE_NAME
+--------------------------------------------------------------------------------
+ACCTMANAGER
+ACCTMANAGER2
+AUTHOR
+BOOKAUTHOR
+BOOKS
+CUSTOMERS
+ORDERITEMS
+ORDERS
+PROMOTION
+PUBLISHER
+
+10 rows selected.

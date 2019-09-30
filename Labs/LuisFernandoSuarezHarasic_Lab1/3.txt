@@ -1,0 +1,3 @@
+SQL> select Table_Name, Comments from dictionary where Table_Name like 'DBA_%';
+
+no rows selected

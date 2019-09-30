@@ -1,0 +1,2 @@
+SELECT UNIQUE customer# 
+FROM   orders; 

@@ -1,0 +1,25 @@
+SQL> select * from v$version;
+
+BANNER
+--------------------------------------------------------------------------------
+    CON_ID
+----------
+Oracle Database 12c Enterprise Edition Release 12.1.0.2.0 - 64bit Production
+         0
+
+PL/SQL Release 12.1.0.2.0 - Production
+         0
+
+CORE    12.1.0.2.0      Production
+         0
+
+
+BANNER
+--------------------------------------------------------------------------------
+    CON_ID
+----------
+TNS for Linux: Version 12.1.0.2.0 - Production
+         0
+
+NLSRTL Version 12.1.0.2.0 - Production
+         0

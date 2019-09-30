@@ -1,0 +1,4 @@
+SELECT lname 
+       || ', ' 
+       || fname AS authors 
+FROM   author; 

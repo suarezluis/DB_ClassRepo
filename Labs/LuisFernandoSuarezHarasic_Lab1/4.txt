@@ -1,0 +1,9 @@
+SQL> select Table_Name, Comments from dictionary where Table_Name like 'USER_%';
+
+.
+.
+.
+.
+
+
+452 rows selected.

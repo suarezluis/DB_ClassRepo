@@ -1,0 +1,6 @@
+
+SQL> describe dictionary
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ TABLE_NAME                                         VARCHAR2(128)
+ COMMENTS                                           VARCHAR2(4000)

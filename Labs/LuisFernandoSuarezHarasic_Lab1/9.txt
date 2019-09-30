@@ -1,0 +1,11 @@
+SQL> select Table_Name, Column_Name, Comments from dict_columns where table_name  Like 'USER_%';
+.
+.
+.
+.
+.
+.
+.
+.
+
+4847 rows selected.

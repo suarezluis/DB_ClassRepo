@@ -1,0 +1,11 @@
+SQL>  select * from dictionary;
+
+.
+.
+.
+.
+.
+.
+.
+
+1000 rows selected.

@@ -1,0 +1,16 @@
+SQL> select Object_Name from user_objects where object_type = 'TABLE';
+
+OBJECT_NAME
+--------------------------------------------------------------------------------
+ACCTMANAGER
+ACCTMANAGER2
+AUTHOR
+BOOKAUTHOR
+BOOKS
+CUSTOMERS
+ORDERITEMS
+ORDERS
+PROMOTION
+PUBLISHER
+
+10 rows selected.

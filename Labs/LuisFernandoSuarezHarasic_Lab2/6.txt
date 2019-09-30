@@ -1,0 +1,2 @@
+SELECT UNIQUE category AS categories 
+FROM   books; 
