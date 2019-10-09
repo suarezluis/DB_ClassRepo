@@ -21,7 +21,6 @@ def main():
       avgPrice = 0.0 
    # end of if
 
-   print('\n', numPrices, 'Prices entered.  The average is: ', \
-         format(avgPrice, '.2f'))
+   print('\n', numPrices, 'Prices entered.  The average is: ', format(avgPrice, '.2f'))
 
 main()

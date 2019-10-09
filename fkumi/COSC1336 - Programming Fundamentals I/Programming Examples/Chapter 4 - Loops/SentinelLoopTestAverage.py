@@ -12,8 +12,7 @@ def main():
 
    if counter > 0:
       avg = total / counter
-      print('\n', counter, 'Grades entered. The average is:', \
-            format(avg, '.1f')) 
+      print('\n', counter, 'Grades entered. The average is:', format(avg, '.1f')) 
    else:
       print('No grades were entered') 
 

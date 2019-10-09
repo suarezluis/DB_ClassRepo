@@ -19,8 +19,7 @@ def main():
    average = total / num_test_scores
 
    # Display the average.
-   print('\nThe average for the test is:', \
-         format(average, '.1f'))
+   print('\nThe average for the test is:', format(average, '.1f'))
    print()
 
 main()

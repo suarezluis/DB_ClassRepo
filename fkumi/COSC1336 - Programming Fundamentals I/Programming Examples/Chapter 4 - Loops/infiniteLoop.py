@@ -15,8 +15,7 @@ def main():
         commission = sales * comm_rate
 
         # Display the commission.
-        print('The commission is $', \
-              format(commission, ',.2f'), sep='')
+        print('The commission is $', format(commission, ',.2f'), sep='')
 
 # Call the main function.
 main()
