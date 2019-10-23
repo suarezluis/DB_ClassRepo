@@ -25,7 +25,7 @@ import Disc
 def main():
     coeffA = int(input('Enter the coefficient A: '))
     coeffB = int(input('Enter the coefficient B: '))
-    coeffC = int(input('Enter the coefficient B: '))
+    coeffC = int(input('Enter the coefficient C: '))
     
     disc = Disc.discriminant(coeffA, coeffB, coeffC)
     

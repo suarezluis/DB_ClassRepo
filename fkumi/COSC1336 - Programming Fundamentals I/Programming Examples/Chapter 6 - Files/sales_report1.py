@@ -7,7 +7,7 @@ def main():
     
     try:
         # Open the sales_data.txt file.
-        infile = open('sales_data.txt', 'r')
+        infile = open('sales3.txt', 'r')
 
         # Read the values from the file and
         # accumulate them.
@@ -21,11 +21,11 @@ def main():
         # Print the total.
         print(format(total, ',.2f'))
         
-    except IOError:
-        print('An error occured trying to read the file.')
+#    except IOError:
+#        print('An error occured trying to read the file.')
 
-    except ValueError:
-        print('Non-numeric data found in the file.')
+#    except ValueError:
+#        print('Non-numeric data found in the file.')
 
     except:
         print('An error occured.')

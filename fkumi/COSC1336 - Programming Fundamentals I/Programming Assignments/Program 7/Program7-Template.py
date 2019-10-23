@@ -24,7 +24,7 @@ def main():
     
     lineRead = inFile.readline()
     while lineRead != '':
-       words = lineRead.split() 
+       words = lineRead.split()
        for word in words:
           num = float(word)
           print(format(num, '.2f'))

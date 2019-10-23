@@ -23,7 +23,7 @@
 
 def main():
 
-    userInfo()
+    developerInfo()
     aCost, aPercent = getUserInputs()
     aRetail = wholeSale(aCost, aPercent)
     displayResults(aRetail)
@@ -56,7 +56,8 @@ def getUserInputs():
 #
 #  Description : 
 #
-#  Parameters  : 
+#  Parameters  :
+#
 #  Returns     : 
 #
 #*********************************************************************
@@ -96,12 +97,12 @@ def displayResults(theRetail):
 #  Returns     : 
 #
 #*********************************************************************
-def userInfo():
-    print('Name:     <Name>')
+def developerInfo():
+    print('Name:     Instructor')
     print('Course:   Programming Fundamentals I')
     print('Program:  ???')
     print()
-# End of userInfo
+# End of developerInfo
 
 
 # Call the main function the start execution of the program
