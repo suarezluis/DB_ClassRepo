@@ -11,13 +11,13 @@ def main():
     # Add some names to the list.
     while again.upper() == 'Y':
         # Get a name from the user.
-        name = input('Enter a name: ')
+        name = int(input('Enter a number: '))
 
         # Append the name to the list.
         name_list.append(name)
 
         # Add another one?
-        print('Do you want to add another name?')
+        print('Do you want to add another number?')
         again = input('y = yes, anything else = no: ')
         print()
 

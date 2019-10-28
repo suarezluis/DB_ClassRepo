@@ -5,6 +5,7 @@ def main():
     # Create a list of product numbers.
     prod_nums = ['V475', 'F987', 'Q143', 'R688']
 
+    print(prod_nums)
     # Get a product number to search for.
     search = input('Enter a product number: ')
 
