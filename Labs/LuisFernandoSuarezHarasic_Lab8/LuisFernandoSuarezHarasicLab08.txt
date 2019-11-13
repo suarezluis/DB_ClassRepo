@@ -1,0 +1,51 @@
+--1. 
+SELECT Initcap (firstname), 
+       Initcap(lastname) 
+FROM   customers; 
+--2.
+SELECT firstname, 
+       lastname, 
+       Nvl2(referred, 'REFERRED', 'NOT REFERRED') "status" 
+FROM   customers;
+
+--3.
+SELECT title, 
+       To_char( ( paideach - cost ) * quantity , '$999.99') "profit"
+FROM   books 
+       join orderitems USING(isbn) 
+WHERE  order# = 1002;
+
+--4.
+SELECT title, 
+       Round(( retail - cost ) / cost * 100, 0) ||'%' "percentage"
+FROM   books;
+
+--5.
+SELECT To_char(current_date, 'DAY, HH:MI:SS') "current date"
+FROM   dual;
+
+--6.
+SELECT title, 
+       Lpad(cost, 12, '*') "cost"
+FROM   books; 
+
+--7.
+SELECT DISTINCT Length(isbn) 
+FROM   books;
+
+--8.
+SELECT title, 
+       pubdate, 
+       SYSDATE, 
+       Trunc(Months_between(SYSDATE, pubdate), 0) "age"
+FROM   books;
+
+--9.
+SELECT Next_day(SYSDATE, 'WEDNESDAY') "next wednesday"
+FROM   dual;
+
+--10.
+SELECT customer#,zip, 
+       Substr(zip, 3, 2) "Index 3 and 4 in ZIP Code", 
+       Instr(customer#, 3) "Index of 3 in customer#"
+FROM   customers;
