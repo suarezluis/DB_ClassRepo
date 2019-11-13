@@ -62,12 +62,12 @@ def main():
 def showResults(year_dict, count_dict):
     
     # Receive user input
-    year = int(input('Enter a year in the range 1903-2018: '))
+    year = int(input('Enter a year in the range 1903-2019: '))
 
     # Print results
     if year == 1904 or year == 1994:
         print("The world series wasn't played in the year", year)
-    elif year < 1903 or year > 2018:
+    elif year < 1903 or year > 2019:
         print('The data for the year', year, \
               'is not included in our database.')
     else:

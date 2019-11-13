@@ -19,11 +19,11 @@
 #********************************************************************
 def main():
     
-    inFile = open('program10.txt', 'r')
-    outFile = open('program10-out.txt', 'w')
+    inFile = open('Program10.txt', 'r')
+    outFile = open('Program10-out.txt', 'w')
 	
     outFile.write(str("%12s    %12s  %16s\n" % ("Account #", "Income", "Members")))
-		
+    
     lineRead = inFile.readline()       # Read first record
     while lineRead != '':              # While there are more records
        words = lineRead.split()        # Split the records into substrings
@@ -31,7 +31,7 @@ def main():
        annualIncome = float(words[1])  # Convert second substring to float
        members = int(words[2])         # Convert third substring to integer
        
-       print("%10d  %15.2f  %10d" % (acctNum, annualIncome, members))
+       print("%10d  %16.2f  %10d" % (acctNum, annualIncome, members))
        outFile.write(str("%10d   %16.2f   %12d\n" % (acctNum, annualIncome, members)))
 	
        lineRead = inFile.readline()    # Read next record

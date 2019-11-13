@@ -3,7 +3,7 @@ New York Giants
 Chicago White Sox
 Chicago Cubs
 Chicago Cubs
-Pittsburg Pirates
+Pittsburgh Pirates
 Philadelphia Athletics
 Philadelphia Athletics
 Boston Red Sox
@@ -112,3 +112,4 @@ Kansas City Royals
 Chicago Cubs
 Houston Astros
 Boston Red Sox
+Washington Nationals
