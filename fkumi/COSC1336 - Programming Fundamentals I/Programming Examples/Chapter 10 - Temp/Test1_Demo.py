@@ -6,7 +6,7 @@ def main():
     testA = Test1_Class.Test1()
     testB = Test1_Class.Test1()
  
-    print('Priint test variables:')
+    print('Print test variables:')
     print("testVar1 - TestA = ", testA.testVar1)
     print("testVar1 - TestB = ", testB.testVar1)
 

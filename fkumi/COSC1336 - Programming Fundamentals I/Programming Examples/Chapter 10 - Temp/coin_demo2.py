@@ -26,8 +26,7 @@ class Coin:
     # referenced by sideup.
     
     def get_sideup(self):
-        __a = self.__test1()
-        return __a
+        return self.__sideup
 
     def __test1(self):
         print("Calling __test1 method")
@@ -35,3 +34,21 @@ class Coin:
 
     def __del__(self):
         print("I am dying - bye")
+
+# The main function.
+def main():
+    # Create an object from the Coin class.
+    my_coin = Coin()
+
+    # Display the side of the coin that is facing up.
+    print('This side is up:', my_coin.get_sideup())
+
+    # Toss the coin.
+    print('I am tossing the coin...')
+    my_coin.toss()
+
+    # Display the side of the coin that is facing up.
+    print('This side is up:', my_coin.get_sideup())
+    
+# Call the main function.
+main()

@@ -8,8 +8,6 @@
 #
 #  Course:            COSC 1336 Programming Fundamentals I 
 #
-#  Course Synonym:    <392XX>
-#
 #  Due Date:          <Due Date>
 #
 #  Instructor:        Fred Kumi 

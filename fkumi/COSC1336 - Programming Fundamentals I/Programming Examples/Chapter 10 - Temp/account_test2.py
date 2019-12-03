@@ -1,13 +1,14 @@
-# This program demonstrates the BankAccount class.
+# This program demonstrates the BankAccount class
+# with the __str__ method added to it.
 
-import bankaccount
+import bankaccount2
 
 def main():
     # Get the starting balance.
     start_bal = float(input('Enter your starting balance: '))
 
     # Create a BankAccount object.
-    savings = bankaccount.BankAccount(start_bal)
+    savings = bankaccount2.BankAccount(start_bal)
 
     # Deposit the user's paycheck.
     pay = float(input('How much were you paid this week? '))
@@ -15,9 +16,7 @@ def main():
     savings.deposit(pay)
 
     # Display the balance.
-    print('Your account balance is $', \
-          format(savings.get_balance(), ',.2f'),
-          sep='')
+    print(savings)
 
     # Get the amount to withdraw.
     cash = float(input('How much would you like to withdraw? '))
@@ -25,9 +24,7 @@ def main():
     savings.withdraw(cash)
 
     # Display the balance.
-    print('Your account balance is $', \
-          format(savings.get_balance(), ',.2f'),
-          sep='')
+    print(savings)
 
 # Call the main function.
 main()

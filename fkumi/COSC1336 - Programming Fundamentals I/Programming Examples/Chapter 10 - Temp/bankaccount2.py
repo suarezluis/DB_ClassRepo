@@ -8,7 +8,7 @@ class BankAccount:
     
     def __init__(self, bal):
         self.__balance = bal
-
+    
     # The deposit method makes a deposit into the
     # account.
 
@@ -34,5 +34,5 @@ class BankAccount:
     # indicating the object's state.
 
     def __str__(self):
-#        return 'The balance is $' + format(self.__balance, ',.2f')
-         return self.__balance
+        return 'The balance is $' + format(self.__balance, ',.2f')
+
